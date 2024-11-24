@@ -949,6 +949,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pt-8 {
   padding-top: 2rem;
 }
@@ -1076,6 +1081,30 @@ video {
 
 .opacity-100 {
   opacity: 1;
+}
+
+.opacity-40 {
+  opacity: 0.4;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}
+
+.opacity-5 {
+  opacity: 0.05;
+}
+
+.opacity-90 {
+  opacity: 0.9;
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
+
+.opacity-85 {
+  opacity: 0.85;
 }
 
 .bg-blend-overlay {
