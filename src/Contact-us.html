@@ -12,6 +12,19 @@
     html {
       scroll-behavior: smooth;
     }
+    body{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      opacity: 0;
+      transform: translatey(30px);
+      animation: moveup 1s linear forwards;
+      animation-delay: 5s;
+    }
+    @keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
   </style>
 <body>
     <header class="bg-blue-500 shadow-md w-full">

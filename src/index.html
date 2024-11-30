@@ -12,7 +12,22 @@
     html {
       scroll-behavior: smooth;
     }
-  </style>
+    body{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .bigsection{
+      opacity: 0;
+      transform: translatey(30px);
+      animation: moveup 1s linear forwards;
+      animation-delay: 3s;
+    }
+    @keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+  }
+    </style>
 <body >
     <header class="bg-blue-500 shadow-md w-full">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-blend-overlay">
@@ -57,14 +72,14 @@
         </div>
     </header>
     
-    <section class=""><div class="w-full overflow-hidden">
+    <section class="bigsection"><div class="w-full overflow-hidden">
         <div class="relative w-full overflow-hidden">
             <!-- Carousel Slides -->
-            <div id="carousel-slides" class="flex transition-transform duration-700 ease-in-out md:py-14">
+            <div id="carousel-slides" class="flex transition-transform duration-700 ease-in-out ">
               <!-- Slide 1 -->
               <div class="min-w-full">
                 <img src="./images/WhatsApp Image 2024-11-23 at 06.46.53_90a30097.jpg" alt="Slide 1" class="w-full h-[50vh] md:h-[70vh] object-cover">
-                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white px-20 lg:px-40">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center text-white px-20 lg:px-40 py-40">
                   <h1 class="text-3xl md:text-6xl font-bold bg-white px-2 rounded-md"><span class="text-purple-900">R.</span><span class="text-blue-500">R.</span><span class="text-red-500">P.</span><span class="text-black">A</span></h1>
                   <p class="mt-2 text-sm md:text-lg lg:text-3xl">
                     "RRPA is an evidenced-based research firm specializing in conducting scientific research publishable in international highly rated SCOPUS and Web of Science indexed journals. We conduct policy-based research for government agencies, private corporations, and engage university academics in collaborative efforts and services to help them grow in their line of careers."
@@ -99,7 +114,7 @@
               >
             </button>
           </div>
-          <div class="py-10 bg-gray-200 my-10 lg:mx-10 md:mx-10 mx-5 rounded-3xl px-10">
+          <div class="py-10 bg-white shadow-md my-10 lg:mx-10 md:mx-10 mx-5 rounded-3xl px-10">
           <h1 class="text-4xl font-bold text-blue-500 text-center py-5">ABOUT US</h1>
           <!-- About us  -->
           <div class="rounded-lg lg:grid lg:grid-cols-2 gap-10">
@@ -119,14 +134,13 @@
               <p class="text-gray-700 leading-relaxed">
                   RRPA is an evidenced-based research firm specializing in conducting scientific research publishable in international highly rated SCOPUS and Web of Science indexed journals. We conduct policy-based research for government agencies, private corporations, and engage university academics in collaborative efforts and services to help them grow in their line of careers.
               </p>
-             </section>
+            </section>
 
             </div>
             <a href="./About.html" class="flex justify-end">Read More</a>
             </div>
 
           
-   
         <div class="">
           
             <div class=" mx-auto px-2 rounded-3xl">
@@ -209,7 +223,7 @@
     </div>
     <footer class="bg-gray-600 max-md:py-5 md:py-10">
         <div class="md:flex md:justify-between max-md:space-y-5 max-md:px-10 md:px-40">
-            <div class="text-white max-md:text-center">Copyrights © 2024 <a href="https://rahmaaz.vercel.app/" class="text-blue-300">Ramhaaz Research and Policy Analysis</a>. All rights reserved.</div>
+            <div class="text-white max-md:text-center">Copyrights © 2024 <a href="ramhaaz.vercel.app" class="text-blue-300">Ramhaaz Research and Policy Analysis</a>. All rights reserved.</div>
             <div class="text-white max-md:text-center">By:Taz Tahir</div>
         </div>
     </footer>
