@@ -41,27 +41,7 @@ nextButton.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % slides.children.length;
   updateCarousel();
 });
-    // Select the button
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-// Show the button when the user scrolls down 300px
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    scrollToTopBtn.classList.remove("opacity-0", "pointer-events-none");
-    scrollToTopBtn.classList.add("opacity-100");
-  } else {
-    scrollToTopBtn.classList.add("opacity-0", "pointer-events-none");
-    scrollToTopBtn.classList.remove("opacity-100");
-  }
-});
-
-// Scroll back to the top when the button is clicked
-scrollToTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
+  
 
 function validateForm() {
       const name = document.getElementById('name').value;
@@ -98,5 +78,23 @@ function validateForm() {
       // If all validations pass
       return true;
     }
-   
+    
+
+
+    // Scroll-Up Button Logic
+    const scrollUpButton = document.getElementById('scrollUpButton');
+
+    // Toggle visibility based on scroll position
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollUpButton.classList.remove('hidden');
+      } else {
+        scrollUpButton.classList.add('hidden');
+      }
+    });
+
+    // Smooth scroll to the top on button click
+    scrollUpButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 
