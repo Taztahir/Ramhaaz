@@ -1,11 +1,18 @@
+const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
+const sidebar = document.getElementById('sidebar');
 
-        // Toggle Mobile Menu
-        const menuButton = document.getElementById('menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-    
-        menuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-        });
+menuBtn.addEventListener('click', () => {
+    sidebar.classList.remove('-translate-x-full');
+    sidebar.classList.add('translate-x-0');
+});
+
+closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('translate-x-0');
+    sidebar.classList.add('-translate-x-full');
+});
+
+
         let countdown = 3; // Set the timer in seconds
         const timerElement = document.getElementById("timer");
 
@@ -80,21 +87,4 @@ function validateForm() {
     }
     
 
-
-    // Scroll-Up Button Logic
-    const scrollUpButton = document.getElementById('scrollUpButton');
-
-    // Toggle visibility based on scroll position
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        scrollUpButton.classList.remove('hidden');
-      } else {
-        scrollUpButton.classList.add('hidden');
-      }
-    });
-
-    // Smooth scroll to the top on button click
-    scrollUpButton.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
+    
