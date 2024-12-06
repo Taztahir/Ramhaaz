@@ -23,7 +23,7 @@
       
       transform: translatey(30px);
       animation: moveup 1s linear forwards;
-      animation-delay: 1s;
+      animation-delay: 0s;
     }
     @keyframes moveup{
     100%{
@@ -122,13 +122,14 @@
               >
             </button>
           </div>
-          <div class="py-10 bg-white shadow-md my-10 lg:mx-10 md:mx-10 mx-5 rounded-3xl px-10" id="About">
-          <h1 class="text-4xl font-bold text-white text-center py-5 my-10 bg-blue-500">ABOUT US</h1>
+          <div class=" bg-white shadow-md my-20 lg:mx-10 md:mx-10 mx-5 rounded-3xl px-10" id="About">
+          
           <!-- About us  -->
-          <div class="rounded-lg lg:grid lg:grid-cols-2 gap-10 lg:py-10">
-            <div class="lg:pt-20">
+          <div class="rounded-lg lg:grid lg:grid-cols-2 gap-10">
+            <img src="./images/about-us.jpeg" alt="" class=" hidden lg:flex">
+            <div class=""><h1 class="text-4xl font-bold text-blue-500 text-center pt-10">ABOUT US</h1>
               <!-- Overview Section -->
-            <section class="mb-8">
+            <section class="pt-10">
               <h2 class="text-3xl font-semibold text-blue-500 mb-4 max-lg:text-center">Who We Are</h2>
               <p class="text-gray-700 leading-relaxed text-xl">
                 RRPA is a premier research firm committed to conducting high-quality, scientific studies. 
@@ -138,38 +139,46 @@
               </p>
             </section>
 
-            <section>
+            <section class="pt-4">
               <h2 class="text-3xl font-semibold text-blue-500 mb-4 max-lg:text-center">Overview</h2>
               <p class="text-gray-700 leading-relaxed text-xl">
                   RRPA is an evidenced-based research firm specializing in conducting scientific research publishable in international highly rated SCOPUS and Web of Science indexed journals. We conduct policy-based research for government agencies, private corporations, and engage university academics in collaborative efforts and services to help them grow in their line of careers.
               </p> 
-              
-            </section>
-            </div>
-            <img src="./images/about-us.webp" alt="" class="rounded-full hidden lg:flex">
-            
-            </div>
-            <div class="flex justify-end space-x-3 text-center">
+              <div class="flex justify-end space-x-3 text-center md:pt-5 pt-10">
               <a href="./About.html" class="text-gray-400">Read More</a>
               <a href="./About.html">
                 <ion-icon name="arrow-forward-outline" class=" bg-blue-500 p-2 rounded-full animate-bounce"></ion-icon>
               </a>
               
             </div>
+            </section>
+            </div>
+            
+            </div>
+            
             
             </div>
             </div>
 
           
-        <div class="">
-          
-            <div class=" mx-auto px-2 rounded-3xl">
-              <h2 class="text-4xl font-bold text-blue-500 text-center py-10">OUR LOCATION</h2>
-              <div class="w-full">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7927.579450918557!2d3.389227!3d6.5482133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d7280143a69%3A0xc879dc7da627df10!2s5b%20Sunday%20Ogunyade%20St%2C%20Gbagada%2C%20Lagos%20100101%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1732393958798!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <section class="py-10">
+              <div class="space-y-10">
+                <!-- section 1 -->
+                <div>
+                  <h2 class="text-3xl font-semibold text-blue-500 text-center">Our Location</h2>
+                  <p class="text-gray-700 text-center lg:text-2xl">
+                    Ibusa House
+                    1st & 3rd Floors,
+                    No. 5b Sunday Ogunyade Street,
+                    Off Gbagada Bus Stop, Gbagada, Lagos, Nigeria.
+                  </p>
+                </div>
+                <!-- section 2 -->
+                <div class="lg:mx-40">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7927.579450918557!2d3.389227!3d6.5482133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d7280143a69%3A0xc879dc7da627df10!2s5b%20Sunday%20Ogunyade%20St%2C%20Gbagada%2C%20Lagos%20100101%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1732393958798!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" class="rounded-3xl"></iframe>
+                </div>
               </div>
-            </div>
-          </div>
+            </section>
           
         <!-- CONTACT US -->
         <div>
@@ -225,7 +234,7 @@
   </button>
             
     </section>
-    <div class="preloader bg-white ease-in-out duration-1000 fixed inset-0 flex flex-col items-center justify-center z-50">
+    <!-- <div class="preloader bg-white ease-in-out duration-1000 fixed inset-0 flex flex-col items-center justify-center z-50">
         <img src="./images/ramhaaz-logo.jpg" alt="" class="w-20">
         <h1 class="font-bold">RAMHAAZ</h1>
         <div class="spinner w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-4">
@@ -235,7 +244,7 @@
         <p class="text-lg font-medium text-gray-700">
         Loading... <span id="timer" class="font-bold text-blue-500">3</span>s
         </p>
-    </div>
+    </div> -->
     
     <footer class="bg-gray-600 max-md:py-5 md:py-10 ">
       <div class="grid md:grid-cols-3 lg:mx-40 gap-10 lg:gap-20 py-10">
@@ -244,7 +253,7 @@
         <div class="flex justify-center">
           <img src="./images/ramhaaz-logo.jpg" alt="" class="size-20 rounded-full items-center">
         </div>
-        <h1 class="md:text-3xl lg:mx-16 font-bold bg-white px-2 rounded-md "><span class="text-purple-900">R.</span><span class="text-blue-500">R.</span><span class="text-red-500">P.</span><span class="text-black">A</span></h1>
+        <h1 class="md:text-3xl mx-32 lg:mx-16 font-bold bg-white px-2 rounded-md "><span class="text-purple-900">R.</span><span class="text-blue-500">R.</span><span class="text-red-500">P.</span><span class="text-black">A</span></h1>
         <p class="text-white">Welcome to RAMHAAZ Research and Policy Analysis (RRPA) Ltd/GTE</p>
       </div>
       <!-- pages  -->

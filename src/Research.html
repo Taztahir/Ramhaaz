@@ -16,6 +16,18 @@
     body{
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+    section{
+      opacity: 0;
+      transform: translatey(30px);
+      animation: moveup 1s linear forwards;
+      animation-delay: 0.25s;
+    }
+    @keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
   </style>
 <body>
    <!-- Navbar -->
@@ -84,7 +96,7 @@
         <div class="flex justify-center">
           <img src="./images/ramhaaz-logo.jpg" alt="" class="size-20 rounded-full items-center">
         </div>
-        <h1 class="md:text-3xl lg:mx-16 font-bold bg-white px-2 rounded-md "><span class="text-purple-900">R.</span><span class="text-blue-500">R.</span><span class="text-red-500">P.</span><span class="text-black">A</span></h1>
+        <h1 class="md:text-3xl mx-32 lg:mx-16 font-bold bg-white px-2 rounded-md "><span class="text-purple-900">R.</span><span class="text-blue-500">R.</span><span class="text-red-500">P.</span><span class="text-black">A</span></h1>
         <p class="text-white">Welcome to RAMHAAZ Research and Policy Analysis (RRPA) Ltd/GTE</p>
       </div>
       <!-- pages  -->

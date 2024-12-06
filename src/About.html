@@ -16,6 +16,18 @@
     body{
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+    section{
+      opacity: 0;
+      transform: translatey(30px);
+      animation: moveup 1s linear forwards;
+      animation-delay: 0.25s;
+    }
+    @keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
   </style>
 <body>
    <!-- Navbar -->
@@ -81,55 +93,102 @@
     </header>
 
     <!-- Content -->
-    <div class="bg-white shadow-lg rounded-lg p-8 lg:grid lg:grid-cols-2 gap-10">
-      <!-- Overview Section -->
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold text-blue-500 mb-4 max-lg:text-center">Who We Are</h2>
-        <p class="text-gray-700 leading-relaxed">
-          RRPA is a premier research firm committed to conducting high-quality, scientific studies. 
-          Our research meets the stringent standards required for publication in internationally recognized 
-          journals indexed by <strong>SCOPUS</strong> and the <strong>Web of Science</strong>. With a passion for 
-          excellence, we bridge the gap between academic inquiry and practical policy-making.
-        </p>
+    <div class="bg-white shadow-lg rounded-lg p-8 space-y-20">
+      <!-- WHO WE ARE  -->
+      <section class="">
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- section 1 -->
+          <div class="text-center lg:mt-16">
+            <h2 class="text-3xl font-semibold text-blue-500 max-lg:text-center">Who We Are</h2>
+              <p class="text-gray-700 leading-relaxed lg:text-2xl">
+                RRPA is a premier research firm committed to conducting high-quality, scientific studies. 
+                Our research meets the stringent standards required for publication in internationally recognized 
+                journals indexed by <strong>SCOPUS</strong> and the <strong>Web of Science</strong>. With a passion for 
+                excellence, we bridge the gap between academic inquiry and practical policy-making.
+              </p>
+          </div>
+          <!-- section 2 -->
+          <div>
+            <img src="./images/who-we-are (2).jpeg" alt="" class="w-full lg:h-[400px] lg:rounded-3xl rounded-3xl">
+          </div>
+        </div>
       </section>
 
-      <!-- Overview -->
+      <!-- overview  -->
        <section>
-        <h2 class="text-2xl font-semibold text-blue-500 mb-4 max-lg:text-center">Overview</h2>
-        <p class="text-gray-700 leading-relaxed">
-            RRPA is an evidenced-based research firm specializing in conducting scientific research publishable in international highly rated SCOPUS and Web of Science indexed journals. We conduct policy-based research for government agencies, private corporations, and engage university academics in collaborative efforts and services to help them grow in their line of careers.
-        </p>
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- section 1 -->
+          <div>
+            <img src="./images/overview.jpeg" alt="" class="w-full  lg:h-[400px] lg:rounded-3xl rounded-3xl">
+           </div>
+          <!-- section 2 -->
+          <div class="text-center lg:mt-16">
+            <h2 class="text-3xl font-semibold text-blue-500 max-lg:text-center">Overview</h2>
+              <p class="text-gray-700 leading-relaxed lg:text-2xl">
+              RRPA is an evidenced-based research firm specializing in conducting scientific research publishable in international highly rated   SCOPUS and Web of Science indexed journals. We conduct policy-based research for government agencies, private corporations, and   engage university academics in collaborative efforts and services to help them grow in their line of careers.
+              </p>
+          </div>
+        </div>
        </section>
 
       <!-- What We Do Section -->
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold text-blue-500 mb-4 max-lg:text-center">What We Do</h2>
-        <ul class="list-disc pl-5 space-y-2 text-gray-700">
-          <li><strong>Policy Research:</strong> Supporting government agencies and private corporations with data-driven insights that inform policies and strategic decisions.</li>
-          <li><strong>Academic Collaboration:</strong> Partnering with university scholars to deliver impactful research and foster career development.</li>
-          <li><strong>Professional Growth:</strong> Providing tools, resources, and collaborative opportunities that empower academics and professionals to excel in their fields.</li>
-        </ul>
+      <section class="">
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- section 1 -->
+          <div class="text-center lg:mt-16">
+            <h2 class="text-3xl font-semibold text-blue-500 max-lg:text-center">What We Do</h2>
+              <ul class="list-disc pl-5 space-y-2 text-gray-700 lg:text-2xl">
+                <li><strong>Policy Research:</strong> Supporting government agencies and private corporations with data-driven insights that inform policies and strategic decisions.</li>
+                <li><strong>Academic Collaboration:</strong> Partnering with university scholars to deliver impactful research and foster career development.</li>
+                <li><strong>Professional Growth:</strong> Providing tools, resources, and collaborative opportunities that empower academics and professionals to excel in their fields.</li>
+              </ul>
+          </div>
+          <!-- section 2 -->
+          <div>
+            <img src="./images/what-we-do.jpeg" alt="" class="w-full lg:h-[400px] lg:rounded-3xl rounded-3xl">
+          </div>
+        </div>
+        
       </section>
 
       <!-- Mission Section -->
-      <section class="mb-8">
-        <h2 class="text-2xl font-semibold text-blue-500 mb-4 max-lg:text-center">Our Mission</h2>
-        <p class="text-gray-700 leading-relaxed">
-          Our mission is to drive societal progress by delivering cutting-edge research and actionable insights 
-          that empower stakeholders to make informed decisions. Whether it's guiding public policy or advancing 
-          academic scholarship, we aim to be at the forefront of impactful research and analysis.
-        </p>
+      <section class="">
+        <div class="grid md:grid-cols-2 gap-10">
+          <!-- section 1 -->
+          <div>
+            <img src="./images/our-mission.jpeg" alt="" class="w-full lg:h-[400px] lg:rounded-3xl rounded-3xl">
+          </div>
+          <!-- section 2 -->
+            <div class="text-center lg:mt-16">
+              <h2 class="text-3xl font-semibold text-blue-500 mb-4 max-lg:text-center">Our Mission</h2>
+              <p class="text-gray-700 leading-relaxed lg:text-2xl">
+                Our mission is to drive societal progress by delivering cutting-edge research and actionable insights 
+                that empower stakeholders to make informed decisions. Whether it's guiding public policy or advancing 
+                academic scholarship, we aim to be at the forefront of impactful research and analysis.
+              </p>
+            </div>
+        </div>
+        
       </section>
 
       <!-- Location Section -->
       <section>
-        <h2 class="text-2xl font-semibold text-blue-500 mb-4 max-lg:text-center">Our Location</h2>
-        <p class="text-gray-700">
-          <strong>Ibusa House</strong><br>
-          1st & 3rd Floors,<br>
-          No. 5b Sunday Ogunyade Street,<br>
-          Off Gbagada Bus Stop, Gbagada, Lagos, Nigeria.
-        </p>
+        <div class="space-y-10">
+          <!-- section 1 -->
+          <div>
+            <h2 class="text-3xl font-semibold text-blue-500 text-center">Our Location</h2>
+            <p class="text-gray-700 text-center lg:text-2xl">
+              Ibusa House
+              1st & 3rd Floors,
+              No. 5b Sunday Ogunyade Street,
+              Off Gbagada Bus Stop, Gbagada, Lagos, Nigeria.
+            </p>
+          </div>
+          <!-- section 2 -->
+          <div class="lg:mx-40">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7927.579450918557!2d3.389227!3d6.5482133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8d7280143a69%3A0xc879dc7da627df10!2s5b%20Sunday%20Ogunyade%20St%2C%20Gbagada%2C%20Lagos%20100101%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1732393958798!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" class="rounded-3xl"></iframe>
+          </div>
+        </div>
       </section>
     </div>
   </div>
@@ -141,7 +200,7 @@
         <div class="flex justify-center">
           <img src="./images/ramhaaz-logo.jpg" alt="" class="size-20 rounded-full items-center">
         </div>
-        <h1 class="md:text-3xl lg:mx-16 font-bold bg-white px-2 rounded-md "><span class="text-purple-900">R.</span><span class="text-blue-500">R.</span><span class="text-red-500">P.</span><span class="text-black">A</span></h1>
+        <h1 class="md:text-3xl mx-32 lg:mx-16 font-bold bg-white px-2 rounded-md "><span class="text-purple-900">R.</span><span class="text-blue-500">R.</span><span class="text-red-500">P.</span><span class="text-black">A</span></h1>
         <p class="text-white">Welcome to RAMHAAZ Research and Policy Analysis (RRPA) Ltd/GTE</p>
       </div>
       <!-- pages  -->
