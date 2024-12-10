@@ -633,16 +633,6 @@ video {
   margin-right: 2.5rem;
 }
 
-.mx-20 {
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-.mx-40 {
-  margin-left: 10rem;
-  margin-right: 10rem;
-}
-
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -736,16 +726,8 @@ video {
   height: 24rem;
 }
 
-.h-\[500px\] {
-  height: 500px;
-}
-
 .h-\[50vh\] {
   height: 50vh;
-}
-
-.h-\[700px\] {
-  height: 700px;
 }
 
 .w-12 {
@@ -760,13 +742,12 @@ video {
   width: 5rem;
 }
 
-.w-full {
-  width: 100%;
+.w-\[1200px\] {
+  width: 1200px;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-full {
+  width: 100%;
 }
 
 .min-w-full {
@@ -852,6 +833,26 @@ video {
   list-style-type: disc;
 }
 
+.columns-4 {
+  -moz-columns: 4;
+       columns: 4;
+}
+
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
+}
+
+.columns-1 {
+  -moz-columns: 1;
+       columns: 1;
+}
+
+.break-inside-avoid {
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -874,6 +875,10 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .gap-8 {
@@ -920,6 +925,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
 .space-y-5 > :not([hidden]) ~ :not([hidden]) {
@@ -1041,10 +1052,6 @@ video {
   padding: 0.5rem;
 }
 
-.p-20 {
-  padding: 5rem;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
@@ -1053,16 +1060,16 @@ video {
   padding: 1rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .px-10 {
@@ -1145,9 +1152,8 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-60 {
-  padding-top: 15rem;
-  padding-bottom: 15rem;
+.pb-28 {
+  padding-bottom: 7rem;
 }
 
 .pb-5 {
@@ -1552,16 +1558,17 @@ video {
     height: 400px;
   }
 
-  .lg\:h-\[500px\] {
-    height: 500px;
-  }
-
-  .lg\:w-full {
-    width: 100%;
+  .lg\:w-\[1200px\] {
+    width: 1200px;
   }
 
   .lg\:max-w-6xl {
     max-width: 72rem;
+  }
+
+  .lg\:columns-4 {
+    -moz-columns: 4;
+         columns: 4;
   }
 
   .lg\:grid-cols-2 {
